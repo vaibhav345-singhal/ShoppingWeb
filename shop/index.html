@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MeShop.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="navbar">
+      <div class="left">
+        <div>MeShop</div>
+      </div>
+      <div class="right">
+        <div class="home">Home</div>
+        <div class="login">Login</div>
+        <div class="signup">Sign Up</div>
+        <div class="mycart">My Cart</div>
+        <div class="profile">Profile</div>
+      </div>
+    </div>
+
+  
+    <!-- Body Container -->
+    <div class="body__container">
+      <!-- Side Bar -->
+      <aside class="sidebar">
+        <div class="colors">
+            <p>Colors</p>
+            <form id="colorForm">
+                <label>
+                    <input type="checkbox" name="red" value="red">
+                    Red
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="blue" value="blue">
+                    Blue
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="green" value="green">
+                    Green
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="black" value="black">
+                    Black
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="white" value="white">
+                    White
+                </label>
+            </form>
+        </div>
+
+        <div class="sizes">
+            <p>Sizes</p>
+            <form id="sizeForm">
+                <label>
+                    <input type="checkbox" name="size" value="s">
+                    S
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="size" value="m">
+                    M
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="size" value="l">
+                    L
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="size" value="xl">
+                    XL
+                </label>
+            </form>
+        </div>
+
+        <section class="rating__select">
+            <h3 class="rating__label">Rating</h3>
+            <form id="ratingForm">
+                <input
+                    type="range"
+                    id="range"
+                    min="0"
+                    max="5"
+                    value="0"
+                    list="values"
+                />
+                <div class="rating__value" id="ratingValue">0</div>
+                <datalist id="values">
+                    <option value="0" label="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5" label="5"></option>
+                </datalist>
+            </form>
+        </section>
+
+        <div class="prices">
+            <p>Prices</p>
+            <form id="priceForm">
+                <label>
+                    <input type="checkbox" name="price" value="0-25">
+                    $0 - $25
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="price" value="25-50">
+                    $25 - $50
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="price" value="50-100">
+                    $50 - $100
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="price" value="100">
+                    $100 - onward
+                </label>
+            </form>
+        </div>
+
+        <button type="button" id="applyFilterBtn">Apply Filter</button>
+    </aside>
+
+      <!-- products -->
+      <div class="product__container">
+
+        <div class="searchbar">
+          <span class="material-icons">search</span>
+          <input type="text" placeholder="Search" class="searchbar__box">
+        </div>
+        <div class="recommendations">
+          <button class="all">All</button>
+          <button class="mens">Mens</button>
+          <button class="womens">Womens</button>
+          <button class="jewellery">Jewellery</button>
+          <button class="electronics">Electronics</button>
+        </div>
+
+        <div class="products">
+
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

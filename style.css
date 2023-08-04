@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 5vh;
+}
+
+.navbar > .right {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.buttons__img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image img{
+    height: 70vh;
+}
+
+button {
+    width: 110px;
+    padding: 7px;
+    border: 1px solid black;
+}
+
+.login__btn {
+    background-color: black;
+    color: white;
+}
+
+.signup__btn {
+    background-color: white;
+    color: black;
+}
+
+.body__container {
+    margin: 15px;
+}
